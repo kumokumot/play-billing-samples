@@ -92,5 +92,5 @@ dependencies {
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
 
     // Insert Play Billing Library dependency below this line.
-
+    implementation("com.android.billingclient:billing:$billing_version")
 }
