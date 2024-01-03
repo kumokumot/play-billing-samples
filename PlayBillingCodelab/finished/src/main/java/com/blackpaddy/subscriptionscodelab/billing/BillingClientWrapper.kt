@@ -99,6 +99,7 @@ class BillingClientWrapper(
             QueryPurchasesParams.newBuilder().setProductType(BillingClient.ProductType.SUBS).build()
         ) { billingResult, purchaseList ->
             if (billingResult.responseCode == BillingClient.BillingResponseCode.OK) {
+                android.util.Log.e("TAG", "purchaseList = $purchaseList")
                 if (!purchaseList.isNullOrEmpty()) {
                     _purchases.value = purchaseList
                 } else {
@@ -151,6 +152,7 @@ class BillingClientWrapper(
                                 "published in the Google Play Console."
                     )
                 } else {
+                    Log.e(TAG, "onProductDetailsResponse productDetailsList: $productDetailsList")
                     newMap = productDetailsList.associateBy {
                         it.productId
                     }
