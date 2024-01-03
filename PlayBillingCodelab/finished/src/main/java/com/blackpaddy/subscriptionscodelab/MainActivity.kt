@@ -159,6 +159,16 @@ private fun MainNavHost(viewModel: MainViewModel, activity: MainActivity) {
                                     activity = activity
                                 )
                             }
+                        },
+                        ButtonModel(R.string.change_to_year) {
+                            productsForSale.basicProductDetails?.let {
+                                viewModel.buy(
+                                    productDetails = it,
+                                    currentPurchases = currentPurchases,
+                                    tag = YEARLY_BASIC_PLANS_TAG,
+                                    activity = activity
+                                )
+                            }
                         }
                     ),
                     tag = null,

@@ -49,6 +49,7 @@
     <string name="monthly_premium_upgrade_message">Upgrade to Monthly Premium</string>
     <string name="yearly_premium_upgrade_message">Upgrade to Yearly Premium</string>
     <string name="prepaid_premium_upgrade_message">Upgrade to Prepaid Premium</string>
+    <string name="change_to_year">basicのまま年に変更</string>
 
     <!-- Premium Profile Text Messages -->
     <string name="premium_sub_message">This is your auto-renewing premium profile</string>
